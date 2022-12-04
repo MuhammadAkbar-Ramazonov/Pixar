@@ -1,0 +1,663 @@
+:root{
+    --main-text: #fff;
+    --header-text-color: #000000;
+    --btn-bg-color: #00BAFC;
+}
+
+/* plus-jakarta-sans-regular - latin */
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/plus-jakarta-sans-v3-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/plus-jakarta-sans-v3-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* plus-jakarta-sans-500 - latin */
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+    url('../fonts/plus-jakarta-sans-v3-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/plus-jakarta-sans-v3-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* plus-jakarta-sans-600 - latin */
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+    url('../fonts/plus-jakarta-sans-v3-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/plus-jakarta-sans-v3-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* plus-jakarta-sans-700 - latin */
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('../fonts/plus-jakarta-sans-v3-latin-700.woff2') format('woff2'),
+    url('../fonts/plus-jakarta-sans-v3-latin-700.woff') format('woff');
+}
+
+*,
+*::before,
+*::after{
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html{
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+img{
+    display: block;
+    height: auto;
+}
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: "Plus Jakarta Sans", "Arial", sans-serif;
+    font-style: normal;
+    background-color: #fff;
+    font-weight: 400;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 1256px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+/* STICKY-FOOTER */
+
+.site-main{
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+/* site header start styles */
+.site-header{
+    padding: 24px 0 24px 0;
+    border-bottom: 1px solid #eeeef4;
+}
+
+.site-header__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-right: 50px;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.logo:active {
+    opacity: 0.6;
+}
+
+.site-header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-nav__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-nav__item{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #101010;
+}
+
+.site-nav__item:hover{
+    color: #1AAB7B;
+}
+
+.site-nav__item:active{
+    opacity: 0.6;
+}
+
+.site-nav__item:not(:last-child){
+    margin-right: 30px;
+}
+
+.site-header__link{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    padding: 12px 24px;
+    text-align: center;
+    color: #fff;
+    background-color: #101010;
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+
+.site-header__link:hover {
+    color: #1AAB7B;
+    background-color: #FFFFFF;
+    border: 1px solid #1AAB7B;
+}
+
+.site-header__link:active {
+    color: #fff;
+    background-color: #101010;
+    opacity: 0.6;
+}
+
+
+/* site hero start style */
+
+.hero{
+    margin-top: 91px;
+    margin-bottom: 156px;
+}
+.hero__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.hero__inner{
+    max-width: 550px;
+}
+.hero__title{
+    font-weight: 700;
+    font-size: 61px;
+    line-height: 140%;
+    margin-bottom: 20px;
+    color: #101010;
+}
+.hero__desc{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 40px;
+    color: #636F87;
+}
+.hero__link{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    padding: 20px 40px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #1AAB7B;
+    border: 1.5px solid transparent;
+    border-radius: 6px;
+}
+
+.hero__link:hover{
+    color: #1AAB7B;
+    background-color: #FFFFFF;
+    border: 1.5px solid #1AAB7B;
+}
+
+.hero__link:active{
+    color: #fff;
+    background-color: #1AAB7B;
+    opacity: 0.7;
+}
+
+
+
+/* jobs section start style */
+
+.jobs{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #F2F4F6;
+}
+
+.jobs__title{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 140%;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #101010;
+}
+
+.jobs__list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.jobs__item{
+    max-width: 384px;
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 30px 30px 40px 30px;
+    background-color: #F2F4F6;
+    border: 2px solid #E1E7ED;
+    border-radius: 6px;
+}
+
+.jobs__item:hover{
+    background-color: #1AAB7B;
+}
+
+.jobs__item:hover .jobs__item-title{
+    color: #fff;
+}
+
+.jobs__item:hover .jobs__item-desc{
+    color: #fff;
+}
+
+.jobs__item:hover .jobs__item-link{
+    color: #fff;
+}
+
+.jobs__item:not(:nth-child(3)){
+    margin-right: 32px;
+}
+.jobs__item:last-child{
+    margin-right: 0;
+}
+.jobs__item-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 11px;
+}
+
+.jobs__item-title{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    color: #101010;
+}
+
+.jobs__item-img-inner{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E1E7ED;
+    border-radius: 84px;
+}
+
+.jobs__item-desc{
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 50px;
+    color: #636F87;
+}
+
+.jobs__item-link{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: #000000;
+}
+
+.jobs__item-link:hover{
+    text-decoration: underline;
+}
+
+/* site we work sectoin start style */
+
+.we-work{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.we-work__headings{
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.we-work__headings-title{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 140%;
+    margin-bottom: 16px;
+    color: #101010;   
+}
+
+.we-work__headings-desc{
+    font-size: 18px;
+    line-height: 150%;
+    color: #636F87;
+}
+
+.we-work__item{
+    display: flex;
+    align-items: center;
+}
+
+.we-work__item:not(:last-child){
+    margin-bottom: 100px;
+}
+
+.we-work__item:nth-child(2){
+    flex-direction: row-reverse;
+}
+.we-work__item:nth-child(2) .we-work__img{
+    margin-right: 0;
+    margin-left: 32px;
+}
+
+.we-work__img{
+    margin-right: 32px;
+}
+
+.we-work__inner{
+    max-width: 565px;
+}
+
+.we-work__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    margin-bottom: 20px;
+    color: #101010;
+}
+
+.we-work__desc{
+    font-size: 18px;
+    line-height: 150%;
+    color: #636F87;
+}
+
+/* site form sectoin start style */
+
+.form-section{
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.form-section__inner{
+    max-width: 650px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.form-section__title{
+    max-width: 411px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    color: #101010;
+}
+
+.form-section__desc{
+    font-size: 18px;
+    line-height: 150%;
+    color: #636F87;
+}
+
+.form-section__wrapper{
+    max-width: 1008px;
+    margin: 0 auto;
+    padding: 64px 0;
+    background-color: #F2F4F6;
+    border-radius: 6px;
+}
+
+.site-form{
+    max-width: 384px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.site-form__name{
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 21px;
+    margin-bottom: 51px;
+    color: #101010;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #636f8733;
+}
+
+.site-form__name::placeholder{
+    color: #101010;
+}
+
+.site-form__phone{
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 21px;
+    margin-bottom: 51px;
+    color: #101010;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #636f8733;
+}
+
+.site-form__phone::placeholder{
+    color: #101010;
+}
+
+.site-form__service{
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 21px;
+    margin-bottom: 40px;
+    color: #101010;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #636f8733;
+}
+
+.site-form__servic::placeholder{
+    color: #101010;
+}
+
+.site-form__btn{
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    margin: 0 auto;
+    padding: 20px 69px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #1AAB7B;
+    border-radius: 6px;
+    border: 0;
+}
+
+.form-section__form-desc{
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #858EA2;    
+}
+
+/* site footer start style */
+
+.site-footer{
+    background-color: #101010;
+}
+
+.site-footer-top {
+    padding: 100px 0;
+}
+
+.site-footer-top__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-footer-top__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-footer-top__services{
+    margin-right: 151px;
+}
+
+.site-footer-top__services-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.site-footer-top__services-item{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #A1A8B7;
+}
+
+.site-footer-top__services-item:not(:last-child){
+    margin-bottom: 26px;
+}
+
+.site-footer-top__resources-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.site-footer-top__resources-item{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #A1A8B7;
+}
+
+.site-footer-top__resources-item:not(:last-child){
+    margin-bottom: 26px;
+}
+
+.site-footer-top__connect-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.site-footer-top__connect-tel{
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 26px;
+    color: #A1A8B7;
+}
+
+.site-footer-top__connect-mail{
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 26px;
+    color: #A1A8B7;
+}
+
+.site-footer-top__connect-desc{
+    max-width: 280px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 32px;
+    color: #A1A8B7;
+}
+
+.site-footer-top__connect-list{
+    display: flex;
+    align-items: center;
+}
+
+.site-footer-top__connect-item:not(:last-child){
+    margin-right: 40px;
+}
+
+.footer-link:hover{
+    color: #1AAB7B;
+}
+
+.footer-link:active{
+    opacity: 0.8;
+}
+
+.site-footer-line{
+    height: 1px;
+    margin: 0;
+    border: 0;
+    background-color: #3B4155;
+}
+
+.site-footer-bottom {
+    padding: 50px 0;
+}
+
+.site-footer-bottom__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-footer-bottom__text{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
